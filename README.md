@@ -3,7 +3,7 @@
 A beginner-friendly project using **Node.js**, **Express.js**, and **MySQL** to manage school data. This API allows users to:
 
 - ✅ Add new schools with name, address, latitude, and longitude.
-- 📍 List schools sorted by how close they are to the user’s location (latitude & longitude).
+- 📍 List schools sorted by their proximity to the user’s location (latitude & longitude).
 
 ---
 
@@ -28,12 +28,14 @@ A beginner-friendly project using **Node.js**, **Express.js**, and **MySQL** to 
 
 ```bash
 git clone https://github.com/Sarthakbante07/School-Management.git
-cd School-Management```
+cd School-Management:
+
+
 
 3. Create MySQL Database and Table
 Log in to MySQL and run:
 
-```
+```bash
 CREATE DATABASE school_db;
 
 USE school_db;
