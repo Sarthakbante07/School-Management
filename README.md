@@ -40,7 +40,7 @@ nodemon app.js
 
 
 
-3. Create MySQL Database and Table
+## 3. Create a MySQL Database and Table
 Log in to MySQL and run:
 
 ```bash
@@ -56,3 +56,75 @@ CREATE TABLE schools (
   longitude FLOAT
 );
 ```
+
+## 📬 API Endpoints
+
+➕ POST /addSchool
+Description: Adds a new school
+
+Request Body:
+
+```bash
+{
+  "name": "ABC School",
+  "address": "123 Street, City",
+  "latitude": 21.1458,
+  "longitude": 79.0882
+}
+Success Response:
+```
+
+{
+  "message": "School added successfully"
+}
+
+```bash
+
+📍 GET /listSchools?lat=USER_LAT&lon=USER_LON
+Description: Lists all schools sorted by distance from the user
+```
+
+Example: /listSchools?lat=21.1&lon=79.0
+
+Response:
+
+[
+  {
+    "id": 1,
+    "name": "ABC School",
+    "address": "123 Street",
+    "distance": "2.35 km"
+  },
+  ...
+]
+
+## 📦 Postman Collection
+
+Open Postman → Import
+Use this shared link:
+```
+[[Insert your Postman Collection Link here]](https://www.postman.com/speeding-astronaut-807812/my-workspace/collection/3g4tlup/school-managemant?action=share&creator=29040178)
+```
+
+## The collection contains:
+
+Example request for /addSchool
+Example request for /listSchools
+
+
+## 🌐 Live Deployment
+Example live base URL (if deployed):
+https://your-app-name.onrender.com
+
+Test:
+https://your-app-name.onrender.com/listSchools?lat=21.1&lon=79.0
+
+
+## 👨‍💻 Author
+Sarthak Bante
+📧 GitHub: @Sarthakbante07
+
+
+## 📜 License
+Free to use for educational and learning purposes
+
