@@ -27,8 +27,16 @@ A beginner-friendly project using **Node.js**, **Express.js**, and **MySQL** to 
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/Sarthakbante07/School-Management.git
-cd School-Management:
+# Clone the repository
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
+
+# Initialize npm and install dependencies
+npm install
+
+# Start the development server
+nodemon app.js
+```
 
 
 
